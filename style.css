@@ -1,0 +1,350 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+/*Borda de 20px pra cima e pra baixo
+e nada pra direita e esquerda*/
+}
+
+.formularioPrincipal{
+    margin-left: 10%;
+}
+
+.imagemLogo {
+    width: 17%;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+/*Margem pra cima e pra baixo 0,
+e da direita e esquerda automáticas.*/
+}
+
+nav {
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+/*magin cria a magem.
+os números em ordem são:
+topo, direita, baixo, esquerda; */
+}
+
+nav a {
+    text-transform: uppercase;
+/*Dentro da tag <nav> e dentro
+da tag <a>, transformar o texto
+em maiúsculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+
+.imagemProduto {
+    width: 155px;
+}
+
+.produtos {
+    width: 940px;
+    /*940 é um tamanho padrão*/
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+/*Margem 0 pra cima e pra baixo
+e 1.5% pros lados*/
+    padding: 30px 20px;
+/*Espaçamento interno de 30px
+pra cima e 20px para os lados*/
+    box-sizing: border-box;
+/*Faz com que o tamanho das somas
+de porcentagens com pixels nunca
+passe a "width". Testa sem pra ver*/
+    border: 2px solid #000000;
+/*Borda: largura estilo cor*/
+    border-radius: 20px;
+/*Borda com raio de 20px*/
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{
+    border-color: #16d930;
+}
+
+.produtos li:hover h2{
+    font-size: 36px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imagemRodape {
+    width: 15%;
+}
+
+footer {
+    text-align: center;
+    background: url(preto.png);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display:block;
+    font-size: 20px;
+    /*Tamanho da fonte do label*/
+    margin: 0 0 10px;
+    /*Espaçamento externo*/
+}
+
+.inputPadrao{
+    display:block;
+    margin: 0 0 20px;
+    /*Espaçamento externo*/
+    padding: 10px 25px;
+    /*Espaçamento interno*/
+    width: 50%;
+    /*Largura do input*/
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    /*Botão com 40% da página*/
+    padding: 15px 0px;
+    background: green;
+    /*Espaçamento interno e cor do Botão*/
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    /*Cor do texto e negrito*/
+    border: none;
+    border-radius: 5px;
+    /*Sem borda e com canto arredondado*/
+    transition: 1s all;
+    /*Faz a transição de tudo do botão*/
+}
+
+.enviar:hover{
+    background: darkgreen;
+    cursor: pointer;
+    transform: scale(1.1)
+    /*Aumenta a escala em 20% e roda 70 graus*/
+}
+
+table {
+    margin: 20px 0 40px;
+    /*Espaça entre a tabela e o resto*/
+}
+
+thead {
+    background: grey;
+    color: white;
+    font-weight: bold;
+    /*Cores e formato*/
+}
+
+td, th{
+    border: 1px solid;
+    /*Borda sólida de 1px*/
+    padding: 15px 8px;
+    /*Espaçamento interno*/
+}
+
+/* CSS da página inicial */
+.banner{
+    width: 100%;
+}
+
+.tituloAlinhado {
+    text-align: center;
+    font-size: 2em;
+    /* 'em' é o tamnho de fonte padrão.
+    2em significa o dobro do tamanho da fonte*/
+    margin: 0 0 1em;
+    clear: left;
+    /*Limpa a formatação da esquerda*/
+    text-shadow: 1px 1px 0.5px rgb(75, 65, 65);
+    /*Sombra do texto, 1º Valor do x,
+    2º valor do y, 3º a cor*/
+}
+
+.tituloAlinhado:before{
+    /*before = antes*/
+    content: "[ ";
+    /*content= conteúdo*/
+}
+
+.tituloAlinhado:after{
+    /*after - depois*/
+    content: " ]";
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    /*Margem pra baixo do tamanho da fonte*/
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style:italic;
+}
+
+.sobre{
+    width: 150px;
+    float: left;
+    /*O elemento fica flutuando na esquerda*/
+    margin: 0 20px 20px 0;
+    /*cima,direita, baixo, esquerda*/
+}
+
+.imagemBeneficios{
+    width: 60%;
+    opacity: 0.7;
+    transition: 400ms;
+    /*400 milisegundos pra se transformar */
+    box-shadow: 10px 10px 5px 3px black;
+    /*Sombra da caixa: 1º Quanto desloca no eixo x, 2ºquanto desloca 
+    no eixo y, 3º o quanto de "blurr", 4º qual é a intensidade da borda
+    e no final qual é a cor da sombra.*/
+}
+
+.imagemBeneficios:hover{
+    opacity: 1;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    /*Linear-gradiente faz a transiçaõ de uma cor pra outra*/
+    /*45deg é a inclinação, 45 degrees (graus)*/
+}
+
+.mapaConteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 780px;
+    margin: 1em auto;
+    /*Auto faz a margem automáticamente
+    com o mesmo valor nos dois lados*/
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 30px rgb(43, 36, 36);
+    /*Caixa de sombra, interna, 1º valor x,
+    2º valor y, 3º espaçamento da sombra*/
+}
+
+.conteudoBeneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaBeneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+    /*É a altura da linha, geralmente é 1*/
+}
+
+.itens:nth-child(2n){
+    /*Usando uma operação, pego os pares*/
+    /*Os dois pontos fala que é uma pseudoclasse*/
+    /*First child diz que é o primeiro filho*/
+    font-weight: bold;
+    /*Negrito*/
+}
+
+.itens:before{
+    content: "⚝"
+}
+
+@media screen and (max-width: 480px){
+/*@media screen faz a gente escolher o tamanho da tela
+enquanto o max-width diz qual vai ser o tamanho de tela
+pra gente usar essas configs*/
+    .caixa, .principal, .mapa, .mapaConteudo, .conteudoBeneficios, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .listaBeneficios, .imagemBeneficios {
+        width: 100%;
+    }
+}

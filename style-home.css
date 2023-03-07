@@ -1,0 +1,59 @@
+.tituloPrincipal {
+    padding-left: 20px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+/*padding é o expaçamento interno, que agora tem 30 pixels*/
+
+.tituloAlinhado {
+    text-align: center;
+}
+/*Tiramos a tag style do CSS, porque não é necessária*/
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px
+}
+/*A hashtag mostra qual é o ID*/
+/*Novamente sem o style*/
+
+strong em {
+    color: red;
+}
+/*Ele vai procurar todos os <em> que estão dentro de <strong>
+A ordem é importante inclusive...*/
+/*Isso é usado pra comentar no CSS*/
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+/*Display muda a disposição
+vertical-align mostra com o que a lista está alinha
+margin-right fala quanto de margem pra direita tem*/
+
+.itens {
+font-style: italic;
+}
+/*O ponto marca uma classe*/
+
+.imagemBeneficios {
+    width: 50%;
+}
